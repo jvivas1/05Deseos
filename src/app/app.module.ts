@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+//Servicios
+import {ListadeseosService} from './services/listadeseos.service';
+
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -34,6 +37,7 @@ import {TerminadosComponent} from '../pages/terminados/terminados.component';
   providers: [
     StatusBar,
     SplashScreen,
+    ListadeseosService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
